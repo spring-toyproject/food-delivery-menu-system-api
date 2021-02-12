@@ -16,7 +16,7 @@ subprojects {
 	apply plugin: 'io.spring.dependency-management'
 	apply plugin: 'org.springframework.boot'
 
-	group = 'com.minipj'
+	group = 'com.fooddelivery'
 	version = '0.0.1-SNAPSHOT'
 	sourceCompatibility = JavaVersion.VERSION_11
 
