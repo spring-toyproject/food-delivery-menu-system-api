@@ -1,9 +1,8 @@
 rootProject.name = 'fooddelivery'
 
 include 'core'
+include 'menu-system-web'
 include 'menu-system-api'
 include 'domains'
 include 'domains:menu-domain'
 include 'domains:menu-domain-rdb'
-include 'menu-system-api'
-
