@@ -1,4 +1,4 @@
-package com.fooddelivery.domain.rdb.menu.entity;
+package com.fooddelivery.domain.menu.rdb.menu.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

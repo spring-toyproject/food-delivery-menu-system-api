@@ -1,4 +1,4 @@
-package com.fooddelivery.domain.rdb.base;
+package com.fooddelivery.domain.menu.rdb.base;
 
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;

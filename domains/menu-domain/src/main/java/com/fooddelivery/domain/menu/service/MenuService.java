@@ -1,6 +1,6 @@
 package com.fooddelivery.domain.menu.service;
 
-import com.fooddelivery.domain.rdb.menu.service.MenuRDBService;
+import com.fooddelivery.domain.menu.rdb.menu.service.MenuRDBService;
 import org.springframework.stereotype.Service;
 
 @Service
