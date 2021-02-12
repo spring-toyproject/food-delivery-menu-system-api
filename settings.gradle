@@ -1,4 +1,9 @@
 rootProject.name = 'fooddelivery'
-include 'food-delivery-core'
-include 'food-delivery-domain'
+
+include 'core'
+include 'menu-system-api'
+include 'domains'
+include 'domains:menu-domain'
+include 'domains:menu-domain-rdb'
+include 'menu-system-api'
 
