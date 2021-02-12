@@ -1,0 +1,4 @@
+rootProject.name = 'fooddelivery'
+include 'food-delivery-core'
+include 'food-delivery-domain'
+
