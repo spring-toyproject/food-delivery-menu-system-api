@@ -7,7 +7,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 class FoodDeliveryApplicationTest {
-    @Test
-    void contextLoads() {
-    }
+
+  @Test
+  void contextLoads() {
+  }
 }

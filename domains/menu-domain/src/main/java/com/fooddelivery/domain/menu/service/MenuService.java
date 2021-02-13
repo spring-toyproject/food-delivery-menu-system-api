@@ -5,9 +5,10 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class MenuService {
-    private final MenuRDBService menuRDBService;
 
-    public MenuService(MenuRDBService menuRDBService) {
-        this.menuRDBService = menuRDBService;
-    }
+  private final MenuRDBService menuRDBService;
+
+  public MenuService(MenuRDBService menuRDBService) {
+    this.menuRDBService = menuRDBService;
+  }
 }

@@ -1,45 +1,45 @@
 plugins {
-	id 'org.springframework.boot' version '2.4.2'
-	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
-	id 'java'
+    id 'org.springframework.boot' version '2.4.2'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'java'
 }
 
 allprojects {
-	repositories {
-		mavenCentral()
-	}
+    repositories {
+        mavenCentral()
+    }
 }
 
 subprojects {
-	apply plugin: 'java'
-	apply plugin: 'io.spring.dependency-management'
-	apply plugin: 'org.springframework.boot'
+    apply plugin: 'java'
+    apply plugin: 'io.spring.dependency-management'
+    apply plugin: 'org.springframework.boot'
 
-	group = 'com.fooddelivery'
-	version = '0.0.1-SNAPSHOT'
-	sourceCompatibility = JavaVersion.VERSION_11
+    group = 'com.fooddelivery'
+    version = '0.0.1-SNAPSHOT'
+    sourceCompatibility = JavaVersion.VERSION_11
 
-	dependencies {
-		implementation 'org.springframework.boot:spring-boot-starter-jdbc'
-		runtimeOnly 'mysql:mysql-connector-java'
-		runtimeOnly 'com.h2database:h2'
+    dependencies {
+        implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+        runtimeOnly 'mysql:mysql-connector-java'
+        runtimeOnly 'com.h2database:h2'
 
-		developmentOnly 'org.springframework.boot:spring-boot-devtools'
-	}
+        developmentOnly 'org.springframework.boot:spring-boot-devtools'
+    }
 
-	test {
-		useJUnitPlatform()
-	}
+    test {
+        useJUnitPlatform()
+    }
 }
 
-configure(subprojects.findAll {it.name != 'menu-system-web'}) {
-	dependencies {
-		testImplementation 'org.junit.jupiter:junit-jupiter'
-	}
+configure(subprojects.findAll { it.name != 'menu-system-web' }) {
+    dependencies {
+        testImplementation 'org.junit.jupiter:junit-jupiter'
+    }
 }
 
-configure(subprojects.findAll {it.name != 'core'}) {
-	dependencies {
-		implementation project(':core')
-	}
+configure(subprojects.findAll { it.name != 'core' }) {
+    dependencies {
+        implementation project(':core')
+    }
 }
