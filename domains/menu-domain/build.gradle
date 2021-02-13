@@ -6,5 +6,5 @@ jar {
 }
 
 dependencies {
-    compile project(':domains:menu-domain-rdb')
+    implementation project(':domains:menu-domain-rdb')
 }
