@@ -1,0 +1,4 @@
+rootProject.name = 'domains'
+
+include 'menu-domain'
+include 'menu-domain-rdb'
