@@ -3,7 +3,6 @@ package com.fooddelivery.domain.menu.rdb.menu.entity;
 import com.fooddelivery.domain.menu.rdb.menu.dto.MenuEntityDTO;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.EntityListeners;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -45,7 +44,7 @@ public class MenuEntity {
   }
 
   public MenuEntityDTO toDTO() {
-    MenuEntityDTO menuEntityDTO = new MenuEntityDTO(0L, "", 0L, "", "");
+    MenuEntityDTO menuEntityDTO = new MenuEntityDTO(id, name, price, composition, description);
     return menuEntityDTO;
   }
 
