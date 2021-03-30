@@ -23,6 +23,8 @@ subprojects {
     mainClassName = "com.fooddelivery.FoodDeliveryApplication"
 
     dependencies {
+        testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
         implementation 'org.springframework.boot:spring-boot-starter-jdbc'
         runtimeOnly 'mysql:mysql-connector-java'
         runtimeOnly 'com.h2database:h2'
